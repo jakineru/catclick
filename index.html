@@ -1,0 +1,182 @@
+'
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Página azul con gifs y música</title>
+	<style type="text/css">
+		body {
+			background-color: fuchsia;
+		}
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			transform-origin: center center;
+			transition: transform 0.5s ease-in-out;
+		}
+	</style>
+</head>
+<body onclick="agregarGifsYMúsica()">
+	
+	<script type="text/javascript">
+		var audio = document.createElement("audio");
+		audio.src = "musik.mp3";
+		
+		function agregarGifsYMúsica() {
+			if (audio.paused) {
+				audio.play();
+			}
+			
+			var img1 = document.createElement("img");
+			img1.src = "gif1.gif";
+			img1.width = 300;
+			img1.height = 300;
+			
+			document.body.appendChild(img1);
+			
+			var x1 = Math.floor(Math.random() * window.innerWidth);
+			var y1 = Math.floor(Math.random() * window.innerHeight);
+			
+			img1.style.top = y1 + "px";
+			img1.style.left = x1 + "px";
+			
+			setInterval(function() {
+				var x1 = Math.floor(Math.random() * (window.innerWidth - img1.width));
+				var y1 = Math.floor(Math.random() * (window.innerHeight - img1.height));
+				
+				img1.style.top = y1 + "px";
+				img1.style.left = x1 + "px";
+			}, 500);
+			
+			img1.addEventListener("click", function() {
+				if (this.classList.contains("zoom")) {
+					this.classList.remove("zoom");
+				} else {
+					this.classList.add("zoom");
+				}
+			});
+			
+            var img2 = document.createElement("img");
+			img2.src = "gif2.gif";
+			img2.width = 300;
+			img2.height = 300;
+			
+			document.body.appendChild(img2);
+			
+			var x1 = Math.floor(Math.random() * window.innerWidth);
+			var y1 = Math.floor(Math.random() * window.innerHeight);
+			
+			img2.style.top = y1 + "px";
+			img2.style.left = x1 + "px";
+			
+			setInterval(function() {
+				var x1 = Math.floor(Math.random() * (window.innerWidth - img2.width));
+				var y1 = Math.floor(Math.random() * (window.innerHeight - img2.height));
+				
+				img2.style.top = y1 + "px";
+				img2.style.left = x1 + "px";
+			}, 500);
+			
+			img2.addEventListener("click", function() {
+				if (this.classList.contains("zoom")) {
+					this.classList.remove("zoom");
+				} else {
+					this.classList.add("zoom");
+				}
+			});
+
+            var img3 = document.createElement("img");
+			img3.src = "gif3.gif";
+			img3.width = 300;
+			img3.height = 300;
+			
+			document.body.appendChild(img3);
+			
+			var x1 = Math.floor(Math.random() * window.innerWidth);
+			var y1 = Math.floor(Math.random() * window.innerHeight);
+			
+			img3.style.top = y1 + "px";
+			img3.style.left = x1 + "px";
+			
+			setInterval(function() {
+				var x1 = Math.floor(Math.random() * (window.innerWidth - img3.width));
+				var y1 = Math.floor(Math.random() * (window.innerHeight - img3.height));
+				
+				img3.style.top = y1 + "px";
+				img3.style.left = x1 + "px";
+			}, 500);
+			
+			img3.addEventListener("click", function() {
+				if (this.classList.contains("zoom")) {
+					this.classList.remove("zoom");
+				} else {
+					this.classList.add("zoom");
+				}
+			});
+
+            var img4 = document.createElement("img");
+			img4.src = "gif4.gif";
+			img4.width = 300;
+			img4.height = 300;
+			
+			document.body.appendChild(img4);
+			
+			var x1 = Math.floor(Math.random() * window.innerWidth);
+			var y1 = Math.floor(Math.random() * window.innerHeight);
+			
+			img4.style.top = y1 + "px";
+			img4.style.left = x1 + "px";
+			
+			setInterval(function() {
+				var x1 = Math.floor(Math.random() * (window.innerWidth - img4.width));
+				var y1 = Math.floor(Math.random() * (window.innerHeight - img4.height));
+				
+				img4.style.top = y1 + "px";
+				img4.style.left = x1 + "px";
+			}, 500);
+			
+			img4.addEventListener("click", function() {
+				if (this.classList.contains("zoom")) {
+					this.classList.remove("zoom");
+				} else {
+					this.classList.add("zoom");
+				}
+			});
+
+            var img5 = document.createElement("img");
+			img5.src = "gif5.gif";
+			img5.width = 300;
+			img5.height = 300;
+			
+			document.body.appendChild(img5);
+			
+			var x1 = Math.floor(Math.random() * window.innerWidth);
+			var y1 = Math.floor(Math.random() * window.innerHeight);
+			
+			img5.style.top = y1 + "px";
+			img5.style.left = x1 + "px";
+			
+			setInterval(function() {
+				var x1 = Math.floor(Math.random() * (window.innerWidth - img5.width));
+				var y1 = Math.floor(Math.random() * (window.innerHeight - img5.height));
+				
+				img5.style.top = y1 + "px";
+				img5.style.left = x1 + "px";
+			}, 500);
+			
+			img5.addEventListener("click", function() {
+				if (this.classList.contains("zoom")) {
+					this.classList.remove("zoom");
+				} else {
+					this.classList.add("zoom");
+				}
+			});
+
+            
+
+        }
+		
+    </script>
+	
+</body>
+</html>
